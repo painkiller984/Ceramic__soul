@@ -1,0 +1,181 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    margin-top: 60px;
+    padding: 50px 0 50px 0;
+    background-color: $Dark;
+    color: $Light;
+    &__big {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__wrapper-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 293px;
+        row-gap: 40px;
+    }
+    &__wrapper-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 40px;
+        li {
+            list-style: none;
+        }
+    }
+    &__form {
+        width: 100%;
+    }
+    &__form-email {
+        width: 100%;
+        padding: 0 0 15px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $ui-active;
+        outline: none;
+        color: $ui-active;
+        &::placeholder {
+            color: $ui-active;
+        }
+        &.just-validate-error-field {
+            &::placeholder {
+                color: $ui-error;
+            }
+            border-bottom: 1px solid $ui-error;
+        }
+    }
+    .just-validate-error-label {
+        text-transform: uppercase;
+    }
+    &__form-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__checkbox {
+        transform: translateY(1px);
+    }
+    .btn-submit {
+        margin-top: 20px;
+    }
+    &__pages {
+        display: grid;
+        margin-top: 40px;
+        width: 252px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 40px 66px;
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+            }
+        }
+        a {
+            color: $Light;
+            text-decoration: none;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    &__information {
+        grid-column: 1/3;
+    }
+    &__social {
+        display: flex;
+        padding: 0;
+        align-items: flex-start;
+        gap: 40px;
+        width: 92px;
+        flex-direction: column;
+        margin-top: 40px;
+        li {
+            list-style: none;
+        }
+
+        &-links {
+            display: flex;
+            font-size: 24px;
+            gap: 10px;
+            cursor: pointer;
+        }
+    }
+    &__copyright {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__wrapper-pages {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__pages {
+            margin-top: 40px;
+            width: 428px;
+            grid-template-columns: 72px 74px 150px;
+            grid-template-rows: none;
+        }
+        &__information {
+            grid-column: 3/4;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__block-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 163px;
+        }
+        &__wrapper-pages {
+            gap: 163px;
+        }
+        &__pages {
+            margin-top: 0;
+        }
+        &__social {
+            margin-top: 0;
+        }
+        &__copyright {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        margin-top: 100px;
+        padding: 80px 0 52px 0;
+        &__copyright {
+            margin-top: 18px;
+        }
+        &__block-container {
+            gap: 313px;
+        }
+        &__wrapper-pages {
+            gap: 313px;
+        }
+    }
+}

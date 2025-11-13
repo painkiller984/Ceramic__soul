@@ -1,0 +1,21 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Anton",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.93.2",
+    "vite": "^7.1.10"
+  },
+  "dependencies": {
+    "just-validate": "^4.3.0",
+    "swiper": "^12.0.3"
+  }
+}

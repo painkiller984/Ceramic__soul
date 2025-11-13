@@ -1,0 +1,103 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.blog {
+    padding-top: 50px;
+    &__title {
+        margin-top: 60px;
+    }
+    &__title-h3 {
+        text-align: left;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__card {
+        border: 1px solid $Dark;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        background: $Light;
+    }
+    &__data {
+        display: block;
+        &-column {
+            padding: 25px 25px 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    &__text {
+        margin-top: 25px;
+        padding: 0 25px 25px;
+        color: $Dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__img {
+        width: calc(100% + 2px);
+        transform: translateX(-1px) translateY(-1px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        &__wrapper {
+            position: relative;
+            padding: 25px 25px 0;
+            &::before {
+                @include angle-decoration;
+            }
+        }
+        &__text {
+            margin-top: 15px;
+        }
+        &__data {
+            display: flex;
+            &-column {
+                gap: 0;
+                justify-content: space-between;
+                .btn-read {
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            align-items: flex-start;
+            gap: 50px;
+            padding-top: 27px;
+        }
+        &__card {
+            max-width: 520px;
+        }
+        &__img {
+            object-fit: cover;
+            min-height: 240px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding-top: 40px;
+        &__title {
+            margin-top: 100px;
+        }
+        &__wrapper {
+            align-items: normal;
+        }
+        &__card {
+            max-width: 670px;
+        }
+    }
+}

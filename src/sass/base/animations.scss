@@ -1,0 +1,26 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideImg {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes spinMove {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    100% {
+        transform: scaleY(0.5) scaleX(1.2);
+    }
+}
