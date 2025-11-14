@@ -145,7 +145,7 @@ try {
     const footervalidator = new JustValidate(".footer__form");
 
     footervalidator
-        .addField("#email", [
+        .addField("#footer__email", [
             {
                 rule: "required",
             },
