@@ -103,6 +103,9 @@
         width: 92px;
         flex-direction: column;
         margin-top: 40px;
+        ul {
+            padding: 0;
+        }
         li {
             list-style: none;
         }
