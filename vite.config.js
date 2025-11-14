@@ -12,6 +12,7 @@ export default defineConfig({
                 catalog: resolve(__dirname, "catalog.html"),
                 blog: resolve(__dirname, "blog.html"),
                 about: resolve(__dirname, "about.html"),
+                terms: resolve(__dirname, "terms.html"),
             },
         },
     },
