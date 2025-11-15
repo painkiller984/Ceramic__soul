@@ -36,7 +36,7 @@
         }
         &__cta {
             margin-top: 0px;
-            animation: slideIn 3s;
+            animation: slideIn 2s;
         }
         &__img {
             width: 230px;
@@ -61,7 +61,7 @@
             width: clamp(450px, 37.5vw, 640px);
             height: 633px;
             object-fit: cover;
-            animation: slideImg 3s;
+            animation: slideImg 2s;
         }
         &__title {
             padding-left: 571px;
